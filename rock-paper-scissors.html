@@ -10,12 +10,9 @@
 </html>
 
 <script>
-
-
 	// This function generates a random number between 0 and 3 and
 	// assigns the randomly generated number a string result of 
-	// either rock, paper, or scissors. It is fully functional.
-	// Do not change.
+	// either rock, paper, or scissors.
 
 	function computerPlay() {
 		let computerNumber = Math.floor((Math.random() * 3));
@@ -32,10 +29,9 @@
 	}
 
 
-	// This function is fully functional (jeje). It plays a round of
-	// rock paper scissors against the computer, using input from
-	// the user and a randomly generated result on the part of the 
-	// computer. Don't change anything about this.
+	// This function plays a round of rock paper scissors against 
+	// the computer, using input from the user and a randomly generated 
+	// result on the part of the computer. 
 
 	function playRound(playerSelection, computerSelection) {
 		if (playerSelection === computerSelection ) {
@@ -58,23 +54,8 @@
 	}
 
 	// This function plays 5 rounds of RPS using the computerSelection
-	// and the playerSelection entered into a prompt. Now, I need to
-	// find the way to keep a running score. So every loop, I need
-	// to determine who won (or if it was a tie), and attribute that
-	// win, loss, or tie to the computer or user.
-
-	// If the string that playRound returns contains 'win', then add a point
-	// to playerScore. If it contains 'lose', add a point to computerScore.
-	// And if it contains 'tied', add a point to tie game. After the loop 
-	// has run it's course log computerScore, playerScore, and tieGame to
-	// the console. 
-
-	// For this I will need to the .includes() method.
-
-	// Create a function to determine who won.
-	// If playerScore > computerScore return 'player has won!'
-	// If computerScore > playerScore return 'computer has won!'
-	// If computerScore == playerScore return 'tie game.'
+	// and the playerSelection entered into a prompt. It reports the 
+	// running score and determines the winner at the end of 5 games.
 
 	function game() {
 			let computerScore = 0;
@@ -110,10 +91,5 @@
 	}
 
 	game();
-
-
-
-
-
 
 </script>
