@@ -11,6 +11,12 @@
 
 <script>
 
+
+	// This function generates a random number between 0 and 3 and
+	// assigns the randomly generated number a string result of 
+	// either rock, paper, or scissors. It is fully functional.
+	// Do not change.
+
 	function computerPlay() {
 		let computerNumber = Math.floor((Math.random() * 3));
 		
@@ -24,6 +30,12 @@
 			return 'rock';
 		}
 	}
+
+
+	// This function is fully functional (jeje). It plays a round of
+	// rock paper scissors against the computer, using input from
+	// the user and a randomly generated result on the part of the 
+	// computer. Don't change anything about this.
 
 	function playRound(playerSelection, computerSelection) {
 		if (playerSelection === computerSelection ) {
@@ -45,9 +57,16 @@
 		}
 	}
 
-	const playerSelection = 'rock';
+	const playerSelection = prompt("Rock, paper, or scissors?").toLowerCase();
 	const computerSelection = computerPlay();
-	console.log(playRound(playerSelection, computerSelection));
+
+	function game() {
+		for (var i = 0; i < 5; i++) {
+			playRound(playerSelection, computerSelection);
+		}
+	}
+
+	game();
 
 
 
